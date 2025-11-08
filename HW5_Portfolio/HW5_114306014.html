@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>114306014_Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        td, th {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .profile-img {
+            width: 150px;
+            border-radius: 10px;
+        }
+        .logo-img {
+            width: 200px;
+        }
+        .music-img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+        }
+        .music-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .music-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- Requirement #1: Title Row -->
+        <tr style="background-color: #E9967A">
+            <th colspan="4">
+                <h1>歡迎來到渝庭的個人作品集</h1>
+            </th>
+        </tr>
+
+        <!-- Requirement #2: Personal Information -->
+        <!-- First row with image and name -->
+        <tr>
+            <td rowspan="4" style="text-align: center; width: 200px;">
+                <img src="https://avatars.githubusercontent.com/u/233196838?v=4" alt="周渝庭的個人照片" class="profile-img">
+            </td>
+            <td style="font-weight: bold; width: 150px;">姓名</td>
+            <td colspan="2">周渝庭</td>
+        </tr>
+
+        <!-- Second row: School -->
+        <tr>
+            <td style="font-weight: bold;">學校</td>
+            <td colspan="2">國立政治大學</td>
+        </tr>
+
+        <!-- Third row: Department -->
+        <tr>
+            <td style="font-weight: bold;">科系</td>
+            <td colspan="2">資訊管理學系</td>
+        </tr>
+
+        <!-- Fourth row: Grade -->
+        <tr>
+            <td style="font-weight: bold;">年級</td>
+            <td colspan="2">大一</td>
+        </tr>
+
+        <!-- Requirement #3: Learning History Title -->
+        <tr style="background-color: #E9967A">
+            <th colspan="3">
+                <h2 style="margin: 0;">學習歷程</h2>
+            </th>
+        </tr>
+
+        <!-- Programming Languages -->
+        <tr>
+            <td style="font-weight: bold; width: 200px;">程式語言</td>
+            <td colspan="2">
+                <ul>
+                    <li>Python 基礎</li>
+                    <li>HTML 入門</li>
+                </ul>
+            </td>
+        </tr>
+
+        <!-- Course Records -->
+        <tr>
+            <td style="font-weight: bold;">修課紀錄</td>
+            <td colspan="2">
+                <ul>
+                    <li>計算機概論</li>
+                    <li>程式設計入門</li>
+                </ul>
+            </td>
+        </tr>
+
+        <!-- Requirement #4: Portfolio Title -->
+        <tr style="background-color: #E9967A">
+            <th colspan="3">
+                <h2 style="margin: 0;">作品集</h2>
+            </th>
+        </tr>
+
+        <!-- Assignment Links -->
+        <tr>
+            <td colspan="3">
+                <ul>
+                    <p>作業連結清單</p>
+                    <li><a href="https://github.com/114306014-code/1141_IntroToCS_114306014/tree/main/HW1_Github" target="_blank">作業1</a></li>
+                    <li><a href="https://github.com/114306014-code/1141_IntroToCS_114306014/tree/main/HW2_DeepDreamGenerator" target="_blank">作業2</a></li>
+                    <li><a href="https://github.com/114306014-code/1141_IntroToCS_114306014/tree/main/HW3_Excel1" target="_blank">作業3</a></li>
+                </ul>
+            </td>
+        </tr>
+
+        <!-- Favorite Music -->
+        <tr>
+            <td colspan="3">
+                <div class="music-container">
+                    <p>我的最愛音樂</p>
+                    <div class="music-item">
+                        <a href="https://music.youtube.com/watch?v=JClfYCxGg-I&si=_NP4xOwSHyvYCyS2" target="_blank">
+                            <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="28" fill="#FF0000"/>
+                                <polygon points="24,18 24,42 42,30" fill="white"/>
+                            </svg>
+                        </a>
+                        <span style="font-size: 16px;">想知道你在想什麼</span>
+                    </div>
+                    <div class="music-item">
+                        <a href="https://music.youtube.com/watch?v=yW_fGYCyqCA&si=niXsQz364wGVQaP6" target="_blank">
+                            <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="28" fill="#FF0000"/>
+                                <polygon points="24,18 24,42 42,30" fill="white"/>
+                            </svg>
+                        </a>
+                        <span style="font-size: 16px;">香水</span>
+                    </div>
+                    <div class="music-item">
+                        <a href="https://music.youtube.com/watch?v=PtOY_rgfNoM&si=AhQ8V_XUsFJ6l1PN" target="_blank">
+                            <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="28" fill="#FF0000"/>
+                                <polygon points="24,18 24,42 42,30" fill="white"/>
+                            </svg>
+                        </a>
+                        <span style="font-size: 16px;">太陽與地球</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Requirement #5: Contact Information Title -->
+        <tr style="background-color: #E9967A">
+            <th colspan="3">
+                <h2 style="margin: 0;">聯絡資訊</h2>
+            </th>
+        </tr>
+
+        <!-- Contact Details -->
+        <tr>
+            <td colspan="3">
+                <p><strong>聯絡我:</strong> <a href="mailto:114306014@nccu.edu.tw">114306014@nccu.edu.tw</a></p>
+                <div style="margin-top: 15px;">
+                    <img src="https://www.nccu.edu.tw/var/file/0/1000/img/logo_en.png" alt="國立政治大學校徽" class="logo-img">
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
