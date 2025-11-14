@@ -1,0 +1,265 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeede1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.main-container {
+    width: 1000px;
+    background-color: #ffffff;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Left Panel */
+.left-panel {
+    width: 30%;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Photo Panel */
+.photo-panel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.photo-panel img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Name Section */
+.name-section {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 20px;
+    text-align: left;
+}
+
+.name-section h2 {
+    margin: 0 0 5px 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.name-section p {
+    margin: 0;
+    font-size: 16px;
+    opacity: 0.85;
+}
+
+
+/* Text Content */
+.text-content {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.text-content h3 {
+    color: #333;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    border-bottom: 2px solid #E9967A;
+    padding-bottom: 5px;
+}
+
+.text-content p {
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 14px;
+}
+
+.text-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.text-content li {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.text-content a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.text-content a:hover {
+    color: #E9967A;
+}
+
+/* School Logo */
+.school-logo {
+    margin-top: auto;
+    text-align: center;
+}
+
+.school-logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* Right Panel */
+.right-panel {
+    width: 70%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 10px;
+}
+
+.section-title {
+    color: #333;
+    font-size: 24px;
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #E9967A;
+}
+
+/* Education Section */
+.education-item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding: 10px 0;
+}
+
+.year {
+    font-weight: bold;
+    color: #E9967A;
+    min-width: 120px;
+    font-size: 14px;
+}
+
+.description {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Homework & Lab Section */
+.hw-lab-container {
+    display: flex;
+    gap: 20px;
+}
+
+.hw-column,
+.lab-column {
+    flex: 1;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hw-column h3,
+.lab-column h3 {
+    color: #333;
+    margin: 0 0 15px 0;
+    font-size: 18px;
+}
+
+.hw-column ul,
+.lab-column ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.hw-column li,
+.lab-column li {
+    margin: 10px 0;
+}
+
+.hw-column a,
+.lab-column a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.hw-column a:hover,
+.lab-column a:hover {
+    color: #E9967A;
+}
+
+/* Favorite Music Section */
+.music-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.music-item {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s;
+}
+
+.music-item:hover {
+    transform: translateY(-5px);
+}
+
+.music-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transform: scale(0.5);
+}
+
+.music-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.music-note {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    font-style: italic;
+    margin: 0;
+}
