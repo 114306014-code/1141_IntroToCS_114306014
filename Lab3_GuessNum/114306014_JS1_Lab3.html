@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        h1 {
+            color: white;
+            text-align: center;
+            margin: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        #result {
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        #result img {
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>114306014_Number Guessing Game</h1>
+    <div id="result"></div>
+
+    <script>
+        // 產生1到100之間的隨機數字
+        var answer = Math.floor(Math.random() * 100) + 1;
+        var chances = 7;
+        var minRange = 1;
+        var maxRange = 100;
+        var gameOver = false;
+
+        // 開始遊戲
+        while (chances > 0 && !gameOver) {
+            // 顯示當前範圍和剩餘次數
+            var input = window.prompt(
+                "請猜一個數字！\n" +
+                "有效範圍：" + minRange + " 到 " + maxRange + "\n" +
+                "剩餘次數：" + chances
+            );
+
+            // 檢查是否按下取消
+            if (input === null) {
+                break;
+            }
+
+            // 去除空白並驗證輸入
+            input = input.trim();
+
+            // 檢查空值或非數字
+            if (input === "" || isNaN(input)) {
+                alert("錯誤！請輸入有效的數字。");
+                continue;
+            }
+
+            // 轉換為數字
+            var guess = Number(input);
+
+            // 檢查是否在有效範圍內
+            if (guess < minRange || guess > maxRange) {
+                alert("錯誤！請輸入在 " + minRange + " 到 " + maxRange + " 之間的數字。");
+                continue;
+            }
+
+            // 減少剩餘次數
+            chances--;
+
+            // 判斷猜測結果
+            if (guess === answer) {
+                // 猜對了
+                document.getElementById("result").innerHTML = '<img src="images/correct.jpg" alt="Correct">';
+                alert("恭喜你！猜對了！答案就是 " + answer);
+                gameOver = true;
+            } else if (guess < answer) {
+                // 猜小了，更新最小範圍
+                minRange = guess + 1;
+                if (chances === 0) {
+                    // 次數用完
+                    document.getElementById("result").innerHTML = '<img src="images/wrong.jpg" alt="Wrong">';
+                    alert("很遺憾，次數用完了！正確答案是 " + answer);
+                }
+            } else {
+                // 猜大了，更新最大範圍
+                maxRange = guess - 1;
+                if (chances === 0) {
+                    // 次數用完
+                    document.getElementById("result").innerHTML = '<img src="images/wrong.jpg" alt="Wrong">';
+                    alert("很遺憾，次數用完了！正確答案是 " + answer);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
